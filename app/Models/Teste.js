@@ -6,11 +6,9 @@ const Model = use("Model");
 class Teste extends Model {
   static get fillable() {
     return [
-      "test_title",
-      "test_description",
-      "test_environment",
-      "test_status",
-      "author",
+      "name",
+      "max_value",
+      "type",
     ];
   }
 }

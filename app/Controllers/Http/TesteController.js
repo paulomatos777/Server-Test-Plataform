@@ -7,10 +7,10 @@ class TesteController {
 
     return testes;
   }
-
+//nome, valor máximo, e tipo (eletrônico ou físico).
   async store({ request }) {
     const data = request.only(Teste.fillable);
-    // console.log(data, "neigfhbaiygwuywfgvuv");
+
 
     const teste = await Teste.create(data);
 
